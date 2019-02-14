@@ -6,3 +6,8 @@ ReactDOM.render(
   document.getElementById('root')
 );
 /* render end */
+
+ReactDOM.render(
+  <TodoList />,
+  document.getElementById('root')
+);
