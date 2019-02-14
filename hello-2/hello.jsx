@@ -11,16 +11,16 @@ class Hello extends React.Component {
 class TodoList extends React.Component {
   render() {
     return <div>
-      <h1>Here is a todo list</h1>
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
+      <h1>TODO LIST</h1>
+      <TodoItem item="buy groceries" />
+      <TodoItem item="laundry" />
+      <TodoItem item="clean house"/>
     </div>
   }
 }
 
 class TodoItem extends React.Component {
   render() {
-    return<li>Here is a todo list item</li>
+    return<li> {this.props.item} </li>
   }
 }
